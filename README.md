@@ -44,3 +44,9 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 # Deployment
 1. yarn run generate
 2. firebase deploy
+
+# Static information pages
+
+The pages in `public/tools/` are copied unchanged into the generated site. They use a local stylesheet and do not load the application bundle. Each page includes `noindex`; this requests search exclusion and is not an access restriction.
+
+Run `npm run generate` and check `/tools/`, `/tools/privacy/`, and `/tools/terms/` in the generated output before deployment.
